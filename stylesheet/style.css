@@ -1,0 +1,68 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: "Monaco", monospace;
+}
+
+body{
+    background-color: #000;
+}
+
+.game{
+    height: 662px;
+    width: 610px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #9ef586;
+    margin-top: calc((100vh - 662px) / 2);
+}
+
+.game__header{
+    height: 50px;
+    border-bottom: 1.5px dashed #9ef586;
+    display: flex;
+    align-items: center;
+}
+
+.game__score, .game__time, .game__hp{
+    color: #9ef586;
+    font-size: 18px;
+    width: calc(600px / 3);
+    text-align: center;
+}
+
+.game__body{
+    position: relative;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 600px;
+    height: 600px;
+}
+
+.grid__cell{
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    border: 2px solid #97ca97;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.4);
+}
+
+.game__platform{
+    width: 105px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #97ca97;
+    position: absolute;
+    bottom: 50px;
+}
+
+.game__ball{
+    width: 15px;
+    height: 15px;
+    left: 45px;
+    position: absolute;
+    top: 530px;
+    border-radius: 50%;
+    background-color: white;
+}
